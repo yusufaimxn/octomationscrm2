@@ -9,7 +9,7 @@ git remote remove origin 2> $null
 git remote add origin https://github.com/yusufaimxn/octomationscrm2.git
 git branch -M main
 git add .
-git commit -m "🚀 Update & Deploy OctomationsCRM MVP"
+git commit -m "Update and Deploy OctomationsCRM MVP"
 git push -u origin main
 
 # STEP 2: Vercel Login
