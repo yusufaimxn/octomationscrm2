@@ -2,6 +2,8 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { createServerSupabaseClient } from "@/lib/supabase-server"
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
   let isLoggedIn = false
 
@@ -101,20 +103,12 @@ export default async function Home() {
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
-                    <path d="M12 8v1" />
-                    <path d="M12 15v1" />
-                    <path d="M16 12h-1" />
-                    <path d="M9 12H8" />
-                    <path d="m15 9-0.86 0.86" />
-                    <path d="m9.86 14.14-0.86 0.86" />
-                    <path d="m15 15-0.86-0.86" />
-                    <path d="m9.86 9.86-0.86-0.86" />
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold">AI-Powered Automation</h3>
+                <h3 className="text-xl font-bold">AI-Powered Campaigns</h3>
                 <p className="text-center text-muted-foreground">
-                  Leverage the power of AI to automate your marketing campaigns and workflows.
+                  Create and optimize marketing campaigns with AI assistance.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
@@ -131,13 +125,12 @@ export default async function Home() {
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M3 8a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" />
-                    <path d="m9 12 2 2 4-4" />
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold">Campaign Management</h3>
+                <h3 className="text-xl font-bold">Automated Workflows</h3>
                 <p className="text-center text-muted-foreground">
-                  Create, manage, and track your marketing campaigns from a single dashboard.
+                  Set up automated workflows to streamline your marketing processes.
                 </p>
               </div>
               <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
@@ -154,85 +147,12 @@ export default async function Home() {
                     width="24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M12 2v20" />
-                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold">Analytics & Reporting</h3>
+                <h3 className="text-xl font-bold">Analytics Dashboard</h3>
                 <p className="text-center text-muted-foreground">
-                  Get detailed insights and reports on your marketing performance.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
-                <div className="rounded-full bg-primary p-2 text-primary-foreground">
-                  <svg
-                    className=" h-6 w-6"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold">Customer Relationship Management</h3>
-                <p className="text-center text-muted-foreground">
-                  Manage your customer relationships and interactions all in one place.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
-                <div className="rounded-full bg-primary p-2 text-primary-foreground">
-                  <svg
-                    className=" h-6 w-6"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9" />
-                    <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5" />
-                    <circle cx="12" cy="12" r="2" />
-                    <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5" />
-                    <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold">Multi-Channel Marketing</h3>
-                <p className="text-center text-muted-foreground">
-                  Reach your customers across multiple channels including email, social media, and more.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 rounded-lg p-4">
-                <div className="rounded-full bg-primary p-2 text-primary-foreground">
-                  <svg
-                    className=" h-6 w-6"
-                    fill="none"
-                    height="24"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M20 7h-3a2 2 0 0 1-2-2V2" />
-                    <path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z" />
-                    <path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-bold">Content Management</h3>
-                <p className="text-center text-muted-foreground">
-                  Create, store, and manage your marketing content with ease.
+                  Track and analyze your marketing performance in real-time.
                 </p>
               </div>
             </div>
